@@ -32,6 +32,7 @@ def stackSorter(boxes):
 
     print("These are the sorted boxes ", boxes)
     print("the boxes stack to a height of ", stackHeight)
+    return stackHeight
 
 
 
