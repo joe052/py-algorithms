@@ -1,6 +1,7 @@
 # define a testing array
 array = [9, 5, 28, 25, 47, 55]
 # array = [24,15,18,18,42, 22]
+
 # function to check if squares exist in array
 def checkSquares(arr):
     # loop through array and record square
