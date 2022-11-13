@@ -1,3 +1,4 @@
+# define box groups as array
 boxGroups = [[140, 120, 150, 100, 170, 200, 90, 180], [170, 150, 140,90, 100, 120, 180, 200], [120, 90, 200, 150, 180, 140, 100, 170]]
 
 # function to match the boxes
@@ -26,5 +27,5 @@ def matchBoxes(arrays):
                         print('\n', start+boxName+'['+str(i+1)+']', end="")
             box += 1
 
-
+# execute code
 matchBoxes(boxGroups)

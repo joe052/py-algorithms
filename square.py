@@ -16,5 +16,5 @@ def checkSquares(arr):
     # return false if none matches
     return False
 
-
+# execute
 print(checkSquares(array))
