@@ -1,7 +1,10 @@
 # Python DSA 
-* Solving real world challenges using Python Data Structures and Algorithms (for the purpose of learning) including;
+* Solving real world challenges using basic Python Data Structures (for the purpose of learning) including;
 
                            - loops
                            - arrays
                            - functions
                            
+* We also do algorithms like;
+             - bubble sort 
+             - binary loss
