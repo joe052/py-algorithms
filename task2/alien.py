@@ -1,14 +1,14 @@
 # sentence = 'how are you'
 sentence = 'My name is Oliver'
 
-
+#function to remove unnecessary whitespace in the sentence
 def cleanSentence(sentence):
     newSentence = sentence.strip()
     newSentence = newSentence.lower()
     result = ' '.join(newSentence.split())
     return repr(result)
 
-
+# function to convert sentence to alien
 def alienSentence(sentence):
     forConsonant = 'ay'
     forVowel = 'way'
@@ -41,7 +41,28 @@ def alienSentence(sentence):
             break
     # generate the final result
     finalResult = ' '.join(sentenceArr)
-    print(finalResult)
+    return finalResult
 
 
-alienSentence(sentence)
+def alienTranslator():
+    print("Hello!")
+    # allow mutiple inputs from user
+    x = list(map(str, input("Enter a sentence to be translated: ").split('  ')))
+    # check for empty input
+    isEmpty = True
+    for i in x:
+        if len(i) != 0:
+            isEmpty = False
+            break
+    # print "Bye!" if input is empty
+    if (isEmpty):
+        print("Bye!")
+    else:
+        # proceed with next operations
+        for sentence in x:
+            # convert sentence to alien
+            print(alienSentence(sentence))
+
+
+# print(alienSentence(sentence))
+alienTranslator()
