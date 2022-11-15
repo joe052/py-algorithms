@@ -45,8 +45,39 @@ def timeSingUp(digit):
         # count up
         newVal = digitSeq[len(digitSeq)-1] + 1
         digitSeq.append(newVal)
-    print(digitSeq)
+    return digitSeq
+
+# main function where we execute from
+def main():
+    print("Welcome to the sing up game!!")
+    x = input("please enter a digit between 2 and 9 to view the singUp sequence? ")
+    digit = int(x)
+    # execute here
+    return timeSingUp(digit)
 
 
-timeSingUp(2)
-# print(digitChecker(15,3))
+def longestSeq():
+    # test all the possible sequences and return longest
+    largest = 0
+    tupleArr = []
+    result = []
+    # fill tuple array
+    for i in range(2, 10):
+        sequence = timeSingUp(i)
+        tupleArr.append([i, len(sequence)])
+    # find longest sequence
+    for tuple in tupleArr:
+        if (tuple[1] > largest):
+            largest = tuple[1]
+    # identify the longest found sequence and return it
+    for tuple in tupleArr:
+        if (tuple[1] == largest):
+            result = tuple
+    return result
+
+
+# execute the code here
+# option a) answer execution
+main()
+# option b) answer execution
+print(longestSeq())
