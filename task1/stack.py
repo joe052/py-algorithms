@@ -36,4 +36,4 @@ def stackSorter(boxes):
 
 
 
-stackSorter(boxes)
+print(stackSorter(boxes))
