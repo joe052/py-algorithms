@@ -79,3 +79,36 @@ def radix_sort(arr):
 n = int(input())
 arr = list(map(int, input().split()))
 print(radix_sort(arr))
+
+
+
+def chunk(x, i):
+    n = len(str(x))
+    start = n - 5*i
+    end = n - 5*i + 5
+    if start >= 0:
+        return int(str(x)[start:end])
+    elif end < 0:
+        return 0
+    else:
+        return int(str(x)[:end])
+ 
+n = int(input())
+x = list(map(int,input().strip().split()))[:n]
+ 
+i = 1
+while True:
+    chunk_dic = {}
+    for num in x:
+        chunk_dic[num] = chunk(num, i)
+    values = list(chunk_dic.values())
+    if values == [0 for j in range(n)]:
+        break
+    values.sort()
+    sort_arr = []
+    for num in values:
+        sort_arr.append(list(chunk_dic.keys())[list(chunk_dic.values()).index(num)])
+        chunk_dic[list(chunk_dic.keys())[list(chunk_dic.values()).index(num)]] = -1
+    print(*sort_arr)
+    i += 1
+ 
