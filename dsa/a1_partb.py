@@ -136,10 +136,12 @@ if __name__ == "__main__":
     linked_list.push_back(1)
 
     # Check if the linked list is a palindrome
+    print("Checking if list is a palindrome...")
     print(linked_list.is_palindrome())  # True
 
     linked_list.pop_back()
     linked_list.push_back(5)
 
     # Check if the linked list is still a palindrome
+    print("Checking if list is still a palindrome...")
     print(linked_list.is_palindrome())  # False
