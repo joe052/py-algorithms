@@ -1,0 +1,21 @@
+Q2. Radix Sort
+
+Implement radix sort, where numbers are sorted using their base b-representation, and Counting sort is used as the auxiliary stable sorting algorithm. For testing purposes, your program should accept as input the base b, followed by the list of numbers to be sorted. It should output in a file the sorted sequence after each pass of the algorithm, that is, after sorting by one base-b-digit; separate the output for different passes by a line.
+
+Q3. Mathematicians' Lifespan Overlap
+
+Imagine asking a modern search engine the following question:
+
+“Please give me the names of the two mathematicians in the last 3 centuries whose lifespans overlapped the most in time.”
+
+How can this task be performed efficiently? Assume that the search engine has access to the list of all known mathematicians (in the last 3 centuries) and the period where they lived; for example:
+
+Leonhard Euler (1707-1783), Carl Friedrich Gauss (1777-1855), Augustin Louis Cauchy (1789-1857), Nikolai Lobachevsky (1792-1856), and Bernhard Riemann (1826-1866).
+
+In this example, Carl Friedrich Gauss and Augustin-Louis Cauchy had the most overlapping lifespans, with an overlap of 66 years. Assume the total number of all known mathematicians is n.
+
+1. Give a brute-force algorithm that runs in O(n²) time and analyze its running time complexity.
+
+2. Give an O(n log n) algorithm and analyze its complexity. (Hint: Sort the list of mathematicians by their birth year and use a divide-and-conquer approach.)
+
+3. Implement both algorithms. For sorting, use your implementation from Q2.
