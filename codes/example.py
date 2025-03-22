@@ -10,8 +10,16 @@ firstName = "Chinese"
 first_name = "Chinese"
 
 # Arithmetic operations
-x = 5
+x = 11
 y = 2
-x += y 
-print(x)
 
+# ans = x += y
+# ans = x ** y
+# ans = x // y
+# ans = x != y
+# ans = x > y
+# ans = x <= y
+# ans = x < 5 and x<10
+ans = x < 5 or x<10
+
+print(not ans)
