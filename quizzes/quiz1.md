@@ -1,7 +1,10 @@
 **Question 1: Variables and Data Types**
-
 *   **Part A:**  What is a variable in Python?  Explain in your own words.
+
+its a place for holding data to later usage 
+
 *   **Part B:**  Give three different examples of assigning a value to a variable.  Each example should use a different data type (e.g., integer, string, boolean).  Include comments to explain what each variable represents.
+
 
 **Question 2: Arithmetic Operators**
 
