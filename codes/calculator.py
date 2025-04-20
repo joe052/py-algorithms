@@ -17,10 +17,12 @@ def subNums(x, y):
 def divNums(x, y):
     return x / y
 
-
+# Create variables 
 a = 15
 b = 5
 
+# Test add Numbers
 result = addNums(a, b)
 
+# Print result
 print(result)
