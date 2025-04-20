@@ -1,4 +1,4 @@
-# Python DSA 
+# Python Data Structures and Algorithms 
 * Messing around with basic Python Data Structures (for the purpose of learning) including;
 
                            - loops
